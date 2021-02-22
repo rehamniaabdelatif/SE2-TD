@@ -36,8 +36,7 @@ void* thread_2_function(void* arg){
     return NULL;
 }
 
-void main()
-{
+void main(){
     pthread_t thread_1, thread_2;
     pthread_create(&thread_1, NULL, thread_1_function, NULL);
     pthread_create(&thread_2, NULL, thread_2_function, NULL);
